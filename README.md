@@ -1,6 +1,7 @@
 # VetSync
 
-Sistema de gestión de citas y telemedicina veterinaria. Prototipo funcional de interfaz hecho con Vue 3.
+Mockup para caso de uso de Sistema de gestión de citas y telemedicina veterinaria. 
+Prototipo funcional de interfaz hecho con Vue 3.
 
 Tres vistas, que se cambian con el selector de arriba a la derecha:
 
@@ -52,11 +53,3 @@ La lógica que decide qué horas se pueden agendar (`slotsFor` en `stores/clinic
 | Sesión y roles | Simulados con el selector de rol. No hay inicio de sesión |
 | Videollamada | Simulada. La sala muestra controles y un cronómetro, sin cámara real |
 | Sala de espera | El botón "Simular" reemplaza el aviso que enviaría el servidor |
-
-## Siguientes pasos
-
-1. Backend con Supabase: autenticación, tablas y políticas de seguridad por rol.
-2. Subir las imágenes a un almacenamiento de archivos en lugar de guardarlas en el navegador.
-3. Videollamada real con WebRTC (por ejemplo LiveKit o Daily).
-4. Enrutador (`vue-router`) para que cada pantalla tenga su propia URL.
-5. Pruebas automáticas de los flujos de agenda.
