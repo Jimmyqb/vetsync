@@ -1,0 +1,27 @@
+/* Layout: una sola columna centrada de 1040px. Barra superior con selector de rol, pestañas por rol, paneles de trabajo debajo. */
+:root{
+  color-scheme:light;
+  --bg:#F1F5F3; --surface:#FFFFFF; --sunk:#E6EDEA; --fg:#12302A; --muted:#566F68; --line:#D1DCD8;
+  --accent:#0D7868; --accent-fg:#FFFFFF; --accent-soft:#D3EEE7;
+  --warn:#8A5200; --warn-soft:#FAEACB; --crit:#B0241C; --crit-soft:#F9D9D6; --ok:#1B7339; --ok-soft:#D5EDDC;
+  --stage:#0B1F1B; --stage-fg:#E4EFEB; --stage-soft:#1B3A33;
+  --f-display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --f-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B1714; --surface:#13231F; --sunk:#1A2D28; --fg:#E4EFEB; --muted:#93AAA3; --line:#26403A;
+    --accent:#4FD1B8; --accent-fg:#06211C; --accent-soft:#17403A;
+    --warn:#F0B655; --warn-soft:#3A2C10; --crit:#FF8A80; --crit-soft:#3F1B18; --ok:#7FD99A; --ok-soft:#173A24;
+    --stage:#071411; --stage-fg:#E4EFEB; --stage-soft:#16302A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B1714; --surface:#13231F; --sunk:#1A2D28; --fg:#E4EFEB; --muted:#93AAA3; --line:#26403A;
+  --accent:#4FD1B8; --accent-fg:#06211C; --accent-soft:#17403A;
+  --warn:#F0B655; --warn-soft:#3A2C10; --crit:#FF8A80; --crit-soft:#3F1B18; --ok:#7FD99A; --ok-soft:#173A24;
+  --stage:#071411; --stage-fg:#E4EFEB; --stage-soft:#16302A;
+  color-scheme: dark;
+}
